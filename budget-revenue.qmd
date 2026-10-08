@@ -1,0 +1,21 @@
+---
+title: "Budget and Revenue"
+---
+
+This page compares each film's production budget with its worldwide box-office revenue. Figure @fig-budget-revenue shows that relationship across the films in the dataset.
+
+```{python}
+#| label: fig-budget-revenue
+#| fig-cap: "Production budget and worldwide revenue for 104 films (millions of US dollars)."
+#| echo: true
+import pandas as pd
+import matplotlib.pyplot as plt
+
+films = pd.read_csv("films.csv")
+
+plt.scatter(films["budget_musd"], films["revenue_musd"])
+plt.xlabel("Production budget (million USD)")
+plt.ylabel("Worldwide revenue (million USD)")
+plt.title("Film budget and worldwide revenue")
+plt.show()
+```

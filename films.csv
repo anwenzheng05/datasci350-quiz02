@@ -1,0 +1,105 @@
+title,year,franchise,budget_musd,revenue_musd,runtime_min,imdb_rating
+The Empire Strikes Back,1980,Star Wars,18,538,124,8.7
+Raiders of the Lost Ark,1981,Indiana Jones,20,390,115,8.4
+E.T. the Extra-Terrestrial,1982,Standalone,10.5,793,115,7.9
+Return of the Jedi,1983,Star Wars,32,475,131,8.3
+Ghostbusters,1984,Standalone,30,296,105,7.8
+Back to the Future,1985,Back to the Future,19,381,116,8.5
+Aliens,1986,Alien,18.5,131,137,8.4
+Top Gun,1986,Top Gun,15,357,110,6.9
+The Untouchables,1987,Standalone,25,106,119,7.8
+Rain Man,1988,Standalone,25,355,133,8.0
+Who Framed Roger Rabbit,1988,Standalone,50,330,104,7.7
+Batman,1989,Batman,35,411,126,7.5
+Indiana Jones and the Last Crusade,1989,Indiana Jones,48,474,127,8.2
+Home Alone,1990,Standalone,18,477,103,7.7
+Beauty and the Beast,1991,Standalone,25,425,84,8.0
+Terminator 2: Judgment Day,1991,Terminator,102,520,137,8.6
+Aladdin,1992,Standalone,28,504,90,8.0
+Jurassic Park,1993,Jurassic Park,63,1046,127,8.2
+The Fugitive,1993,Standalone,44,369,130,7.8
+Forrest Gump,1994,Standalone,55,678,142,8.8
+The Lion King,1994,Standalone,45,968,88,8.5
+GoldenEye,1995,James Bond,60,352,130,7.2
+Toy Story,1995,Toy Story,30,373,81,8.3
+Independence Day,1996,Standalone,75,817,145,7.0
+Mission: Impossible,1996,Mission: Impossible,80,458,110,7.2
+Men in Black,1997,Standalone,90,589,98,7.3
+Titanic,1997,Standalone,200,2264,194,7.9
+Tomorrow Never Dies,1997,James Bond,110,333,119,6.5
+Armageddon,1998,Standalone,140,553,151,6.7
+Saving Private Ryan,1998,Standalone,70,482,169,8.6
+Star Wars: The Phantom Menace,1999,Star Wars,115,1027,136,6.5
+The Matrix,1999,The Matrix,63,467,136,8.7
+The World Is Not Enough,1999,James Bond,135,362,128,6.4
+Toy Story 2,1999,Toy Story,90,497,92,7.9
+Cast Away,2000,Standalone,90,429,143,7.8
+Gladiator,2000,Standalone,103,465,155,8.5
+Harry Potter and the Philosopher's Stone,2001,Harry Potter,125,1024,152,7.6
+Shrek,2001,Shrek,60,488,90,7.9
+The Lord of the Rings: The Fellowship of the Ring,2001,The Lord of the Rings,93,898,178,8.9
+Die Another Day,2002,James Bond,142,432,133,6.0
+Spider-Man,2002,Spider-Man,139,825,121,7.4
+The Lord of the Rings: The Two Towers,2002,The Lord of the Rings,94,947,179,8.8
+Finding Nemo,2003,Standalone,94,940,100,8.2
+Pirates of the Caribbean: The Curse of the Black Pearl,2003,Pirates of the Caribbean,140,654,143,8.1
+The Lord of the Rings: The Return of the King,2003,The Lord of the Rings,94,1146,201,9.0
+Shrek 2,2004,Shrek,150,928,93,7.3
+Spider-Man 2,2004,Spider-Man,200,788,127,7.5
+The Incredibles,2004,Standalone,92,631,115,8.0
+Batman Begins,2005,Batman,150,373,140,8.2
+Harry Potter and the Goblet of Fire,2005,Harry Potter,150,896,157,7.7
+Casino Royale,2006,James Bond,150,616,144,8.0
+Pirates of the Caribbean: Dead Man's Chest,2006,Pirates of the Caribbean,225,1066,151,7.3
+Ratatouille,2007,Standalone,150,623,111,8.1
+Iron Man,2008,Marvel,140,585,126,7.9
+Quantum of Solace,2008,James Bond,200,589,106,6.6
+The Dark Knight,2008,Batman,185,1006,152,9.0
+WALL-E,2008,Standalone,180,521,98,8.4
+Avatar,2009,Avatar,237,2923,162,7.9
+Up,2009,Standalone,175,735,96,8.3
+Inception,2010,Standalone,160,837,148,8.8
+Toy Story 3,2010,Toy Story,200,1067,103,8.3
+Harry Potter and the Deathly Hallows: Part 2,2011,Harry Potter,125,1342,130,8.1
+Skyfall,2012,James Bond,200,1109,143,7.8
+The Avengers,2012,Marvel,220,1519,143,8.0
+The Dark Knight Rises,2012,Batman,250,1081,165,8.4
+Frozen,2013,Standalone,150,1290,102,7.4
+Gravity,2013,Standalone,100,723,91,7.7
+Guardians of the Galaxy,2014,Marvel,170,773,121,8.0
+Interstellar,2014,Standalone,165,701,169,8.7
+Avengers: Age of Ultron,2015,Marvel,250,1403,141,7.3
+Inside Out,2015,Standalone,175,858,95,8.1
+Jurassic World,2015,Jurassic Park,150,1671,124,6.9
+Spectre,2015,James Bond,245,881,148,6.8
+Star Wars: The Force Awakens,2015,Star Wars,245,2068,138,7.8
+Captain America: Civil War,2016,Marvel,250,1153,147,7.8
+Rogue One: A Star Wars Story,2016,Star Wars,200,1056,133,7.8
+Zootopia,2016,Standalone,150,1024,108,8.0
+Coco,2017,Standalone,175,814,105,8.4
+Star Wars: The Last Jedi,2017,Star Wars,200,1333,152,6.9
+Wonder Woman,2017,Standalone,149,823,141,7.3
+Avengers: Infinity War,2018,Marvel,316,2052,149,8.4
+Black Panther,2018,Marvel,200,1349,134,7.3
+Mission: Impossible - Fallout,2018,Mission: Impossible,178,791,147,7.7
+Avengers: Endgame,2019,Marvel,356,2798,181,8.4
+Joker,2019,Standalone,55,1074,122,8.4
+Parasite,2019,Standalone,11,263,132,8.5
+Star Wars: The Rise of Skywalker,2019,Star Wars,275,1074,142,6.5
+Toy Story 4,2019,Toy Story,200,1073,100,7.7
+Tenet,2020,Standalone,200,365,150,7.3
+Dune,2021,Dune,165,407,155,8.0
+No Time to Die,2021,James Bond,250,774,163,7.3
+Spider-Man: No Way Home,2021,Spider-Man,200,1921,148,8.2
+Avatar: The Way of Water,2022,Avatar,350,2320,192,7.5
+Everything Everywhere All at Once,2022,Standalone,25,141,139,7.8
+Top Gun: Maverick,2022,Top Gun,170,1496,130,8.2
+Barbie,2023,Standalone,145,1446,114,6.8
+Oppenheimer,2023,Standalone,100,976,180,8.3
+The Super Mario Bros. Movie,2023,Standalone,100,1362,92,7.0
+Deadpool & Wolverine,2024,Marvel,200,1338,128,7.6
+Dune: Part Two,2024,Dune,190,715,166,8.5
+Inside Out 2,2024,Standalone,200,1699,96,7.5
+Wicked,2024,Standalone,145,756,160,7.5
+A Minecraft Movie,2025,Standalone,150,955,101,5.6
+Lilo & Stitch,2025,Standalone,100,1030,108,6.0
