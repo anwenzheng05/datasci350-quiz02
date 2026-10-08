@@ -1,0 +1,24 @@
+project:
+  type: website
+
+website:
+  title: "Box Office Numbers"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: budget-revenue.qmd
+        text: Budget and Revenue
+      - href: runtime-rating.qmd
+        text: Runtime and Ratings
+      - href: bond.qmd
+        text: The Bond Films
+
+execute:
+  freeze: auto
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true

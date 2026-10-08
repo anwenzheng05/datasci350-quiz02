@@ -1,7 +1,27 @@
-# Quiz 02 command log
-# The initial interactive create command could not accept prompts in this terminal; the documented non-interactive flags completed the same project setup.
+# DATASCI 350 Quiz 02 command log
+# The first command was attempted as specified. The terminal did not expose its interactive prompts, so Quarto's documented non-interactive flags were used to create the project in this repository.
 quarto create project website .
 quarto create project website . --no-prompt --no-open
-# Appended /_site/ and __pycache__/ to the generated .gitignore before rendering.
+# Added Quarto's requested ignores before rendering.
 git add .gitignore commands.txt
 git commit -m "Add gitignore"
+# Edited _quarto.yml and the four .qmd pages; removed the default About page.
+rm about.qmd
+# Rendered six times: three environment/setup failures, one inline-variable failure, then two successful renders after fixing the Bond subset/year expression.
+quarto render
+quarto render
+quarto render
+quarto render
+quarto render
+quarto render
+# Confirmed that freeze output was created.
+ls -la _freeze
+# Stage and commit all site pages and frozen execution results.
+git add -A
+git commit -m "Add site pages and freeze"
+# Publish the website from the gh-pages branch.
+quarto publish gh-pages
+# Stage and commit this command log, then push the main branch to the fork.
+git add commands.txt
+git commit -m "Add command log"
+git push
