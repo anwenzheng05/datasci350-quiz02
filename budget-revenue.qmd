@@ -2,7 +2,7 @@
 title: "Budget and Revenue"
 ---
 
-This page compares each film's production budget with its worldwide box-office revenue. Figure @fig-budget-revenue shows that relationship across the films in the dataset.
+This page compares each film's production budget with its worldwide box-office revenue. The scatterplot @fig-budget-revenue shows that relationship across the films in the dataset.
 
 ```{python}
 #| label: fig-budget-revenue

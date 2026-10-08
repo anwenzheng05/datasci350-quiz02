@@ -1,35 +1,88 @@
-# DATASCI 350 Quiz 02 command log
+# TASK 1
 # The first create command was attempted as specified. The terminal could not accept its interactive prompts, so the documented non-interactive flags created the same project in this repository.
-quarto create project website .
-quarto create project website . --no-prompt --no-open
-# Added Quarto's requested ignore patterns before rendering.
-git add .gitignore commands.txt
+
+quarto create project website . Then choose --no-open
+
+
+
+
+# TASK 2
+# Added quiz requested ignore patterns before rendering.
+ls -a
+printf "/_site/\n__pycache__/\n" >> .gitignore
+git add .gitignore commands.txt 
 git commit -m "Add gitignore"
-# Edited _quarto.yml and the four .qmd pages; removed the default About page.
+
+
+
+
+# TASK 3-5 edited _quarto.yml in VS Code, 
+project:
+  type: website
+
+website:
+  title: "Box Office Numbers" #TASK 3 title of the website
+  navbar: # TASK 4 navigation bar
+    left: 
+      - href: index.qmd
+        text: Home
+      - href: budget-revenue.qmd
+        text: Budget and Revenue
+      - href: runtime-rating.qmd
+        text: Runtime and Ratings
+      - href: bond.qmd
+        text: The Bond Films
+
+execute: # TASK 5
+  freeze: auto
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
+# TASK 4
 rm about.qmd
-# Render attempts: three environment/setup errors, one inline-variable error, then two successful renders after correcting the Bond year calculation.
-quarto render
-quarto render
-quarto render
-quarto render
-quarto render
+
+
+
+
+# TASK 6 wrote index.qmd 
+---title: "Box Office Numbers"---This dataset contains 104 well-known films from 1980 to 2025. The data parameters include approximate budgets, worldwide revenues, runtimes, and ratings. The budget and revenue figures are approximate, rounded values in millions of US dollars and are not adjusted for inflation. The data are intended for classroom exploration rather than research.The website explore the analyses: [Budget and Revenue](budget-revenue.qmd), [Runtime and Ratings](runtime-rating.qmd), and [The Bond Films](bond.qmd).Aside from Lecture 10 and 11, I used AI agent Codex for assistance and debugging. 
+
+
+
+
+# TASK 7 wrote budget-revenue.qmd, 
+---title: "Budget and Revenue"---This page compares each film's production budget with its worldwide box-office revenue. The scatterplot @fig-budget-revenue shows that relationship across the films in the dataset.```{python}#| label: fig-budget-revenue#| fig-cap: "Production budget and worldwide revenue for 104 films (millions of US dollars)."#| echo: trueimport pandas as pdimport matplotlib.pyplot as pltfilms = pd.read_csv("films.csv")plt.scatter(films["budget_musd"], films["revenue_musd"])plt.xlabel("Production budget (million USD)")plt.ylabel("Worldwide revenue (million USD)")plt.title("Film budget and worldwide revenue")plt.show()```
+
+
+
+# TASK 8 wrote in runtime-rating.qmd, 
+---title: "Runtime and Ratings"---Figure @fig-runtime-rating compares runtimes and IMDb ratings for the films. Each point represents one film.```{python}#| label: fig-runtime-rating#| fig-cap: "Runtime and IMDb rating for each film."#| echo: trueimport pandas as pdimport matplotlib.pyplot as pltfilms = pd.read_csv("films.csv")plt.scatter(films["runtime_min"], films["imdb_rating"])plt.xlabel("Runtime (minutes)")plt.ylabel("IMDb rating")plt.title("Film runtime and IMDb rating")plt.show()```### Mean IMDb rating by decade```{python}import pandas as pdimport matplotlib.pyplot as pltfilms = pd.read_csv("films.csv")films["decade"] = films["year"] // 10 * 10films.groupby("decade")["imdb_rating"].mean().round(2)```
+
+
+
+
+# TASK 9 wrote in bond.qmd
+---title: "The Bond Films"---```{python}import pandas as pdimport matplotlib.pyplot as pltfilms = pd.read_csv("films.csv")bond = films[films["franchise"] == "James Bond"]```This page follows worldwide revenue across the James Bond films in the dataset. The films represented here span from `{python} int(bond["year"].min())` to `{python} int(bond["year"].max())`.```{python}plt.plot(bond["year"], bond["revenue_musd"], marker="o")plt.xlabel("Release year")plt.ylabel("Worldwide revenue (million USD)")plt.title("Worldwide revenue of James Bond films")plt.show()```
+# TASK 10 
+#render and commit, including _freeze/
 quarto render
 ls -la _freeze
 # Committed all site sources and frozen execution results.
-git add -A
+git add -A 
 git commit -m "Add site pages and freeze"
-# The first publish attempt reported that the remote had no gh-pages branch and this non-interactive terminal could not initialize it.
+
+# TASK 11
 quarto publish gh-pages
-# Initialized the remote publishing branch, then returned to main.
-git checkout --orphan gh-pages
-git stash push -m "quiz command log"
-git reset --hard
-git commit --allow-empty -m "Initialize gh-pages"
-git push origin gh-pages
-git checkout main
-git stash pop
-# Published the site to GitHub Pages.
-quarto publish gh-pages --no-prompt
+git add _publish.yml
+git commit -m "Add publish config"
+
+# TASK 13
 # Stage and commit this command log, then push main to the fork.
 git add commands.txt
 git commit -m "Add command log"

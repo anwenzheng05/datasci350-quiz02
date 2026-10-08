@@ -1,10 +1,10 @@
 {
-  "hash": "c3e9d05ab962b3f85988a788476a7b46",
+  "hash": "aa7b0628aff8cad42d1a969d40ef341e",
   "result": {
     "engine": "jupyter",
-    "markdown": "---\ntitle: \"Budget and Revenue\"\n---\n\nThis page compares each film's production budget with its worldwide box-office revenue. Figure @fig-budget-revenue shows that relationship across the films in the dataset.\n\n::: {#cell-fig-budget-revenue .cell execution_count=1}\n``` {.python .cell-code}\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")\n\nplt.scatter(films[\"budget_musd\"], films[\"revenue_musd\"])\nplt.xlabel(\"Production budget (million USD)\")\nplt.ylabel(\"Worldwide revenue (million USD)\")\nplt.title(\"Film budget and worldwide revenue\")\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![Production budget and worldwide revenue for 104 films (millions of US dollars).](budget-revenue_files/figure-html/fig-budget-revenue-output-1.png){#fig-budget-revenue width=602 height=449}\n:::\n:::\n\n\n",
+    "markdown": "---\ntitle: \"Budget and Revenue\"\n---\n\nThis page compares each film's production budget with its worldwide box-office revenue. The scatterplot @fig-budget-revenue shows that relationship across the films in the dataset.\n\n::: {#cell-fig-budget-revenue .cell execution_count=1}\n``` {.python .cell-code}\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")\n\nplt.scatter(films[\"budget_musd\"], films[\"revenue_musd\"])\nplt.xlabel(\"Production budget (million USD)\")\nplt.ylabel(\"Worldwide revenue (million USD)\")\nplt.title(\"Film budget and worldwide revenue\")\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![Production budget and worldwide revenue for 104 films (millions of US dollars).](budget-revenue_files/figure-html/fig-budget-revenue-output-1.png){#fig-budget-revenue width=602 height=449}\n:::\n:::\n\n\n",
     "supporting": [
-      "budget-revenue_files"
+      "budget-revenue_files/figure-html"
     ],
     "filters": [],
     "includes": {}
