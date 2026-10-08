@@ -1,0 +1,7 @@
+# Quiz 02 command log
+# The initial interactive create command could not accept prompts in this terminal; the documented non-interactive flags completed the same project setup.
+quarto create project website .
+quarto create project website . --no-prompt --no-open
+# Appended /_site/ and __pycache__/ to the generated .gitignore before rendering.
+git add .gitignore commands.txt
+git commit -m "Add gitignore"
