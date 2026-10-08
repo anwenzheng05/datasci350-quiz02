@@ -1,27 +1,36 @@
 # DATASCI 350 Quiz 02 command log
-# The first command was attempted as specified. The terminal did not expose its interactive prompts, so Quarto's documented non-interactive flags were used to create the project in this repository.
+# The first create command was attempted as specified. The terminal could not accept its interactive prompts, so the documented non-interactive flags created the same project in this repository.
 quarto create project website .
 quarto create project website . --no-prompt --no-open
-# Added Quarto's requested ignores before rendering.
+# Added Quarto's requested ignore patterns before rendering.
 git add .gitignore commands.txt
 git commit -m "Add gitignore"
 # Edited _quarto.yml and the four .qmd pages; removed the default About page.
 rm about.qmd
-# Rendered six times: three environment/setup failures, one inline-variable failure, then two successful renders after fixing the Bond subset/year expression.
+# Render attempts: three environment/setup errors, one inline-variable error, then two successful renders after correcting the Bond year calculation.
 quarto render
 quarto render
 quarto render
 quarto render
 quarto render
 quarto render
-# Confirmed that freeze output was created.
 ls -la _freeze
-# Stage and commit all site pages and frozen execution results.
+# Committed all site sources and frozen execution results.
 git add -A
 git commit -m "Add site pages and freeze"
-# Publish the website from the gh-pages branch.
+# The first publish attempt reported that the remote had no gh-pages branch and this non-interactive terminal could not initialize it.
 quarto publish gh-pages
-# Stage and commit this command log, then push the main branch to the fork.
+# Initialized the remote publishing branch, then returned to main.
+git checkout --orphan gh-pages
+git stash push -m "quiz command log"
+git reset --hard
+git commit --allow-empty -m "Initialize gh-pages"
+git push origin gh-pages
+git checkout main
+git stash pop
+# Published the site to GitHub Pages.
+quarto publish gh-pages --no-prompt
+# Stage and commit this command log, then push main to the fork.
 git add commands.txt
 git commit -m "Add command log"
 git push
